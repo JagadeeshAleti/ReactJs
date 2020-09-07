@@ -1,15 +1,17 @@
 import * as React from "react";
 import "./style.css";
 
-function Movie(props) {
-  return (
-    <div className="movie-card">
-      <img src={props.banner} />
-      <label>
-        {props.name} {props.likes}
-      </label>
-    </div>
-  );
+class Movie extends React.Component {
+  render() {
+    return (
+      <div className="movie-card">
+        <img src={this.props.banner} />
+        <label>
+          {this.props.name} {this.props.likes}
+        </label>
+      </div>
+    );
+  }
 }
 
 export default Movie;
