@@ -6,7 +6,7 @@ function Movie(props) {
     <div className="movie-card">
       <img src={props.banner} />
       <label>
-        {props.name} {props.hero} {props.likes}
+        {props.name} {props.likes}
       </label>
     </div>
   );
