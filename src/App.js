@@ -1,11 +1,9 @@
 import React from "react";
-import Movies from "./Movies/Movies";
-
+import Calculator from "./Calculator/Calculator";
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!!!!</h1>
-      <Movies />
+      <Calculator />
     </div>
   );
 }
