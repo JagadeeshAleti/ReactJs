@@ -17,6 +17,12 @@ const movies = {
     banner:
       "https://i.pinimg.com/736x/2b/9f/e4/2b9fe45f7ad9752821b868c3f5410df9.jpg",
   },
+  Bheesma: {
+    name: "Bheesma",
+    likes: 0,
+    banner:
+      "https://1847884116.rsc.cdn77.org/telugu/gallery/movies/bheeshma2019/bheeshma28012020_01.jpg",
+  },
 };
 
 export default movies;

@@ -14,11 +14,9 @@ class Movies extends React.Component {
   render() {
     return (
       <div className="movies-section">
-        {this.getMovie(this.state.Maharsi)}
-
-        {this.getMovie(this.state.Sahoo)}
-
-        {this.getMovie(this.state.Jersey)}
+        {Object.keys(this.state).map((movie) => {
+          return this.getMovie(this.state[movie]);
+        })}
       </div>
     );
   }
