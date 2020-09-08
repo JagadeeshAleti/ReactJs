@@ -18,9 +18,9 @@ class Calculator extends React.Component {
       showResult: false,
     });
   };
-  setResultToTrue = (e) => {
-    this.setState({
-      showResult: true,
+  setShowResult = (e) => {
+    this.setState((prevState) => {
+      return { showResult: !prevState.showResult };
     });
   };
   render() {
@@ -34,7 +34,7 @@ class Calculator extends React.Component {
         <br /> <br />
         B : <input className="inputB" onChange={this.setB} />
         <br /> <br />
-        <button onClick={this.setResultToTrue}>Result</button>
+        <button onClick={this.setShowResult}>Result</button>
         <br /> <br />
         {this.state.showResult ? (
           <div>
