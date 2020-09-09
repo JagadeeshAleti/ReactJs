@@ -1,14 +1,20 @@
 import React from "react";
-import Movies from "./Movies/Movies";
-import Calculator from "./Calculator/Calculator";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { CustomRouter } from "./CustomRouter";
+import { Links } from "./Links";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Route path="/movies" component={Movies}></Route>
-        <Route path="/calci" component={Calculator}></Route>
-      </Router>
+      <h1>Hello world</h1>
+      <hr></hr>
+      <div className="router">
+        <Router>
+          <Links />
+          <hr />
+          <CustomRouter />
+        </Router>
+      </div>
     </div>
   );
 }
