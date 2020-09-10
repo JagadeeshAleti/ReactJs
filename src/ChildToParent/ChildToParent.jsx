@@ -12,8 +12,10 @@ export class ChildToParent extends React.Component {
   render() {
     return (
       <div>
+        <h3>Parent Data</h3>
         <p>Name: {this.state.name}</p>
         <p>Age : {this.state.age}</p>
+        <br />
         <Child onChange={this.getData} />
       </div>
     );
@@ -31,8 +33,13 @@ class Child extends React.Component {
   render() {
     return (
       <div>
-        Child
+        Child To Parent
         <button onClick={this.onClickListner}>Send Data</button>
+        <br />
+        <br />
+        <h3>Child Data</h3>
+        <p>Name: {this.state.name}</p>
+        <p>Age : {this.state.age}</p>
       </div>
     );
   }
