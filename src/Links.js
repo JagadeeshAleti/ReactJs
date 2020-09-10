@@ -9,6 +9,8 @@ export function Links() {
       <Link to="/calci">Calculator</Link>
       <br />
       <Link to="/parent-to-child">Parent To Child</Link>
+      <br />
+      <Link to="/child-to-parent">Child To Parent</Link>
     </div>
   );
 }
