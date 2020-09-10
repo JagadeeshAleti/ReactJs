@@ -7,6 +7,8 @@ export function Links() {
       <Link to="/movies">Movies</Link>
       <br />
       <Link to="/calci">Calculator</Link>
+      <br />
+      <Link to="/parent-to-child">Parent To Child</Link>
     </div>
   );
 }
