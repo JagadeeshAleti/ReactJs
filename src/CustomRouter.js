@@ -5,6 +5,7 @@ import { ParentToChild } from "./ParentToChild/ParentToChild";
 import { ChildToParent } from "./ChildToParent/ChildToParent";
 import { SiblingCommunication } from "./SiblingCommunication/SiblingCommunication";
 import { InputEvent } from "./InputEvent/InputEvent";
+import { GetAPIDemo } from "./GetAPIDemo/GetAPIDemo";
 import { Route } from "react-router-dom";
 export function CustomRouter() {
   return (
@@ -18,6 +19,7 @@ export function CustomRouter() {
         component={SiblingCommunication}
       ></Route>
       <Route path="/input-event" component={InputEvent}></Route>
+      <Route path="/get-api" component={GetAPIDemo}></Route>
     </div>
   );
 }
