@@ -4,7 +4,8 @@ import Movies from "./Movies/Movies";
 import { ParentToChild } from "./ParentToChild/ParentToChild";
 import { ChildToParent } from "./ChildToParent/ChildToParent";
 import { SiblingCommunication } from "./SiblingCommunication/SiblingCommunication";
-import { Route, Router } from "react-router-dom";
+import { InputEvent } from "./InputEvent/InputEvent";
+import { Route } from "react-router-dom";
 export function CustomRouter() {
   return (
     <div>
@@ -16,6 +17,7 @@ export function CustomRouter() {
         path="/sibling-to-sibling"
         component={SiblingCommunication}
       ></Route>
+      <Route path="/input-event" component={InputEvent}></Route>
     </div>
   );
 }
